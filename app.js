@@ -6,20 +6,85 @@ const PLAYER_NAMES = [
 
 const SEGMENT_COLORS = ['#ff2d75', '#00e5ff', '#ffcc00', '#1a1a3e', '#ff6b9d', '#00b8d4'];
 
-const WINNER_MESSAGES = [
-    "Time to pay up!",
-    "Your round, legend!",
-    "The wheel has spoken!",
-    "Cheers to your wallet!",
-    "You're buying, no arguments!",
-    "The gods of fate have chosen!",
-    "Better luck next time... oh wait.",
-    "Open that wallet wide!",
-    "This round's on you, champ!",
-    "The wheel never lies!"
-];
+const PLAYER_MESSAGES = {
+    antoine: [
+        "Le beau gosse ténébreux du groupe va enfin servir à quelque chose : payer la tournée !",
+        "Avec cette barbe de trois jours parfaitement calculée, t'as clairement le budget gel ET bières.",
+        "Le mec pose en hoodie blanc dans le train comme un influenceur... allez, influenceur de tournées !"
+    ],
+    arnaud: [
+        "Les boucles, la barbe, la chemise en jean... t'es pas venu pour rigoler, t'es venu pour payer.",
+        "On dirait un prof de philo en week-end. Les cours sont gratuits, mais la tournée non.",
+        "Avec ces cheveux bouclés t'as déjà le look serveur de bar, autant aller jusqu'au bout et payer."
+    ],
+    bauj: [
+        "Le doigt qui pointe c'est mignon, mais là c'est TOI que la roue pointe, Bauj.",
+        "Les cheveux poivre et sel, le hoodie stylé, la bague au doigt... t'as la classe, mais surtout la carte bleue.",
+        "Tu fais le malin avec ton finger gun mais c'est ton portefeuille qui va tirer ce soir."
+    ],
+    bec: [
+        "Ferme la bouche Bec, c'est pas le dentiste, c'est la tournée !",
+        "Avec cette tête de mec qui vient de gagner au loto... bah c'est normal, tu paies la tournée !",
+        "La veste Gore-Tex c'est bien pour la pluie, mais ça protège pas du destin : c'est ta tournée."
+    ],
+    clement: [
+        "La casquette à l'envers, le t-shirt de skateur... t'as 15 ans dans ta tête mais c'est toi qui paie comme un grand.",
+        "Clement avec sa barbe rousse de Viking, tu vas conquérir le bar... avec ta CB.",
+        "Le style streetwear c'est cool, mais ce soir ton style c'est surtout distributeur de bières."
+    ],
+    damien: [
+        "Ces yeux écarquillés c'est parce que tu viens de voir le prix de la tournée, Damien ?",
+        "Le regard de psychopathe dans le bus, ça fait peur à personne. Ce qui fait peur c'est l'addition.",
+        "Damien nous fait son plus beau sourire de requin. Parfait, les requins ça paie les tournées."
+    ],
+    elwe: [
+        "La crinière de lion, le North Face, la baguette à la main... le Français ultime va payer comme un Français ultime.",
+        "Elwe avec ses cheveux dans le vent on dirait une pub L'Oréal. Mais ce soir c'est plutôt une pub Kronenbourg.",
+        "T'es adossé à la fenêtre comme un poète maudit, sauf que ce soir ta malédiction c'est la tournée."
+    ],
+    florent: [
+        "Florent dans sa polaire tout doux, on dirait un ours en peluche. Un ours qui va sortir sa CB.",
+        "Le regard perdu dans le vide... tu cherches une excuse pour pas payer ? Y'en a pas.",
+        "Avec cette polaire tu ressembles à un randonneur perdu. Perdu oui, mais direction le bar pour payer."
+    ],
+    jo: [
+        "Jo et ses boucles grises, le George Clooney du groupe ! Clooney aurait payé sans râler, fais pareil.",
+        "Le sourire jusqu'aux oreilles dans ta veste de pluie... tu souriras moins quand tu verras l'addition.",
+        "Jo, le seul mec qui arrive en K-Way et qui repart sans un sou. C'est ta tournée !"
+    ],
+    jomain: [
+        "Le petit visage d'ange de Jomain va pas te sauver ce soir. Sors le portefeuille, bébé.",
+        "Pas de barbe, pas de ride, le Benjamin du groupe... mais assez grand pour payer la tournée.",
+        "Jomain fait sa tête de premier de la classe. Premier de la classe, premier à payer."
+    ],
+    julien: [
+        "Le bonnet, la doudoune mouton, le regard de tueur... Julien est prêt pour tout sauf payer. Dommage.",
+        "On dirait un rappeur en tournée. Bah justement, c'est TA tournée Julien.",
+        "Le style aviateur c'est beau, mais ce soir ton plan de vol c'est direct au comptoir."
+    ],
+    laot: [
+        "Laot et ses cheveux gris de renard argenté. Le renard il est malin, mais la roue est plus maligne.",
+        "Le regard sérieux, le t-shirt noir, le style sobre... sobre sauf ce soir, parce que tu régales.",
+        "Laot fait sa tête de mec trop cool pour sourire. Tu souris pas mais tu paies quand même."
+    ],
+    n2b: [
+        "N2b dans sa doudoune noire, discret comme d'habitude. Discret mais pas invisible pour la roue !",
+        "Le petit sourire en coin genre 'ça tombera pas sur moi'... SURPRISE !",
+        "N2b, le mec toujours bien emmitouflé. Ce soir c'est ton portefeuille qui va avoir froid."
+    ],
+    quentin: [
+        "Les lunettes, le double pouce levé, la veste Explore... t'explores surtout ta carte bleue ce soir !",
+        "Quentin tout sourire comme un moniteur de colo. Bah le moniteur il paie le goûter : c'est ta tournée.",
+        "Le seul mec avec des lunettes du groupe et il a pas vu venir la tournée. Fallait mettre des verres plus épais."
+    ],
+    rouv: [
+        "Le crâne rasé, la barbe pleine, les pouces en l'air : Rouv est prêt ! Prêt à payer surtout.",
+        "On dirait un videur de boîte de nuit. Bah ce soir tu videurs... ton portefeuille.",
+        "Rouv avec son sourire de pub Colgate et ses pouces en l'air. Pouce en l'air, CB en main !"
+    ]
+};
 
-const FINAL_MESSAGE = "The last one standing... it was always going to be you.";
+const FINAL_MESSAGE = "Le dernier survivant... au fond, on savait tous que c'était toi.";
 
 const FALLBACK_COLORS = [
     '#ff2d75', '#00e5ff', '#ffcc00', '#e040fb', '#00e676',
@@ -204,7 +269,7 @@ function drawWheel() {
         ctx.font = '24px "Russo One", sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('All done!', center, center);
+        ctx.fillText('Termin\u00e9 !', center, center);
         return;
     }
 
@@ -405,7 +470,8 @@ function revealWinner(player) {
     if (state.round === state.totalPlayers) {
         msgEl.textContent = FINAL_MESSAGE;
     } else {
-        msgEl.textContent = WINNER_MESSAGES[Math.floor(Math.random() * WINNER_MESSAGES.length)];
+        var msgs = PLAYER_MESSAGES[player.id] || ["C'est ta tournée !"];
+        msgEl.textContent = msgs[Math.floor(Math.random() * msgs.length)];
     }
 
     overlay.classList.add('visible');
@@ -536,7 +602,7 @@ function renderRoster() {
 
         const badge = document.createElement('span');
         badge.className = 'paid-badge';
-        badge.textContent = 'Paid';
+        badge.textContent = 'Pay\u00e9';
         avatarWrapper.appendChild(badge);
 
         const nameEl = document.createElement('span');
@@ -558,7 +624,7 @@ function renderHistory() {
     if (state.history.length === 0) {
         const p = document.createElement('p');
         p.className = 'empty-state';
-        p.textContent = 'No rounds played yet';
+        p.textContent = 'Aucune tourn\u00e9e pour le moment';
         log.appendChild(p);
         return;
     }
@@ -569,7 +635,7 @@ function renderHistory() {
 
         const roundSpan = document.createElement('span');
         roundSpan.className = 'history-round';
-        roundSpan.textContent = 'Round ' + entry.round;
+        roundSpan.textContent = 'Tour ' + entry.round;
 
         const img = document.createElement('img');
         img.className = 'history-avatar';
@@ -595,10 +661,10 @@ function renderHistory() {
 function updateRoundCounter() {
     const el = document.getElementById('round-counter');
     if (state.gameComplete) {
-        el.textContent = 'All rounds complete!';
+        el.textContent = 'Toutes les tourn\u00e9es sont pass\u00e9es !';
         el.classList.add('complete');
     } else {
-        el.textContent = 'Round ' + state.round + ' of ' + state.totalPlayers;
+        el.textContent = 'Tour ' + state.round + ' sur ' + state.totalPlayers;
         el.classList.remove('complete');
     }
 }
@@ -610,18 +676,18 @@ function updateSpinButton() {
 
     if (state.gameComplete) {
         btn.disabled = true;
-        btn.textContent = 'SPIN!';
+        btn.textContent = 'TOURNE !';
         btn.classList.remove('final-round');
     } else if (state.activePlayers.length === 1) {
         btn.disabled = false;
-        btn.textContent = 'Reveal the last one!';
+        btn.textContent = 'Le dernier rescap\u00e9 !';
         btn.classList.add('final-round');
     } else if (state.activePlayers.length === 0) {
         btn.disabled = true;
-        btn.textContent = 'SPIN!';
+        btn.textContent = 'TOURNE !';
     } else {
         btn.disabled = false;
-        btn.textContent = 'SPIN!';
+        btn.textContent = 'TOURNE !';
         btn.classList.remove('final-round');
     }
 }
@@ -677,7 +743,7 @@ function handleFinalRound() {
 // ── Reset ──
 
 function resetGame() {
-    if (!confirm('Reset the game? All progress will be lost.')) return;
+    if (!confirm('Recommencer la partie ? Toute la progression sera perdue.')) return;
 
     state.players.forEach(function (p) { p.eliminated = false; });
     state.activePlayers = state.players.filter(function (p) { return !p.eliminated; });
