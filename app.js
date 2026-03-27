@@ -8,79 +8,184 @@ const SEGMENT_COLORS = ['#ff2d75', '#00e5ff', '#ffcc00', '#1a1a3e', '#ff6b9d', '
 
 const PLAYER_MESSAGES = {
     antoine: [
-        "Le beau gosse ténébreux du groupe va enfin servir à quelque chose : payer la tournée !",
-        "Avec cette barbe de trois jours parfaitement calculée, t'as clairement le budget gel ET bières.",
-        "Le mec pose en hoodie blanc dans le train comme un influenceur... allez, influenceur de tournées !"
+        "Antoine, le mec qui se prend pour un mannequin H&M dans un TER. Allez, mannequin de tournée !",
+        "T'as la tête d'un mec qui commande un spritz en soirée bière. Paye et tais-toi.",
+        "Cette barbe de 3 jours tu la tailles au millimètre mais t'es pas foutu d'esquiver la roue.",
+        "Le hoodie blanc immaculé... t'as peur de te salir mais pas de te ruiner ? C'est ta tournée.",
+        "Antoine il pose dans le train comme si y'avait un photographe. Le seul flash ce soir c'est ta CB.",
+        "T'as le regard ténébreux d'un mec qui sait qu'il va payer mais qui veut quand même avoir l'air beau en le faisant.",
+        "Le mec met un hoodie blanc pour aller en week-end. T'es pas à Milan, t'es dans un car, et tu payes.",
+        "Avec cette mâchoire carrée tu pourrais faire des pubs pour After Shave, mais là tu fais la pub pour la générosité.",
+        "Antoine, le seul mec du groupe qui met 20 minutes à se coiffer pour aller dans un bus. La CB aussi faut la sortir.",
+        "Ce regard de lover dans le train... c'est les bières que tu dragues ou les filles ?"
     ],
     arnaud: [
-        "Les boucles, la barbe, la chemise en jean... t'es pas venu pour rigoler, t'es venu pour payer.",
-        "On dirait un prof de philo en week-end. Les cours sont gratuits, mais la tournée non.",
-        "Avec ces cheveux bouclés t'as déjà le look serveur de bar, autant aller jusqu'au bout et payer."
+        "Arnaud avec ses bouclettes de caniche royal. C'est pas un toilettage qu'il te faut, c'est une tournée à payer.",
+        "La chemise en jean, les boucles, le téléphone greffé à la main... t'es en train de googler 'comment esquiver une tournée' ?",
+        "On dirait un guitariste de groupe indie qui a jamais percé. Ce soir tu perces ton compte en banque.",
+        "Ces boucles rebondissent autant que ta carte bleue va rebondir après cette tournée.",
+        "Arnaud, mi-hobbit mi-bûcheron. Même Frodon payait sa tournée à la taverne du Poney Fringant.",
+        "T'as la tête d'un prof de SVT qui fait des randos le week-end. La seule rando ce soir c'est jusqu'au comptoir.",
+        "Le mec tient son téléphone comme si sa vie en dépendait. Lâche le phone, attrape la CB.",
+        "Avec cette tignasse tu dois mettre 3 litres de shampoing par semaine. T'as le budget shampoing, t'as le budget tournée.",
+        "Arnaud en mode Jean-Jacques Goldman jeune. Sauf que Goldman il chantait 'Je te donne'. Toi aussi : tu donnes ta tournée.",
+        "La barbe mal taillée + les boucles en mode 'je me suis réveillé comme ça'. Bah réveille aussi ton portefeuille."
     ],
     bauj: [
-        "Le doigt qui pointe c'est mignon, mais là c'est TOI que la roue pointe, Bauj.",
-        "Les cheveux poivre et sel, le hoodie stylé, la bague au doigt... t'as la classe, mais surtout la carte bleue.",
-        "Tu fais le malin avec ton finger gun mais c'est ton portefeuille qui va tirer ce soir."
+        "Le finger gun c'est fini Bauj, la seule chose que tu dégaines ce soir c'est ta Visa.",
+        "Poivre et sel la coiffure, poivre et sel l'addition. Sauf que l'addition c'est que pour toi.",
+        "T'as une alliance au doigt mais ce soir c'est avec le comptoir que tu te maries.",
+        "Bauj fait le beau avec ses cheveux gris de George Clooney à Wish.",
+        "Le doigt qui pointe les autres mais c'est toi que la roue a pointé. Arroseur arrosé.",
+        "Ce sourire de commercial en séminaire... tu vas closer un deal : 15 bières, ta CB.",
+        "Les cheveux gris ça fait 'homme mûr'. Un homme mûr ça paye ses tournées sans pleurer.",
+        "Tu fais le mec cool avec ton hoodie marron mais t'as la tête d'un père de famille qui va se faire dépouiller.",
+        "La bague au doigt, le finger gun, le sourire en coin... t'as le starter pack du mec qui va quand même payer.",
+        "Bauj il pointe du doigt comme s'il choisissait qui paye. Plot twist : c'est LUI."
     ],
     bec: [
-        "Ferme la bouche Bec, c'est pas le dentiste, c'est la tournée !",
-        "Avec cette tête de mec qui vient de gagner au loto... bah c'est normal, tu paies la tournée !",
-        "La veste Gore-Tex c'est bien pour la pluie, mais ça protège pas du destin : c'est ta tournée."
+        "BEC FERME LA BOUCHE ON VOIT TES AMYGDALES DEPUIS LE FOND DU BUS.",
+        "Le mec rit tellement fort qu'on pourrait compter ses plombages. Allez, paye autant que t'as de dents.",
+        "Avec cette tête t'as l'air d'un mec qui vient de se prendre une décharge électrique. La décharge c'est l'addition.",
+        "La veste Gore-Tex c'est pour résister à la pluie, pas à la roue. Tu résistes pas, tu payes.",
+        "Bec ouvre la bouche comme s'il allait avaler le bus entier. Avale plutôt l'addition.",
+        "On dirait une photo de réaction meme. Le meme c'est toi qui payes la tournée.",
+        "Le mec a la mâchoire tellement décrochée qu'on dirait un distributeur de PEZ géant. Distribue plutôt des bières.",
+        "Cette tête c'est exactement la tête que tu vas faire quand tu vas voir le prix de 15 pintes.",
+        "Bec rigole comme un phoque sous ecstasy. Le phoque il paye sa tournée au moins ?",
+        "T'as la bouche plus grande que ton portefeuille mais ce soir c'est le portefeuille qui s'ouvre."
     ],
     clement: [
-        "La casquette à l'envers, le t-shirt de skateur... t'as 15 ans dans ta tête mais c'est toi qui paie comme un grand.",
-        "Clement avec sa barbe rousse de Viking, tu vas conquérir le bar... avec ta CB.",
-        "Le style streetwear c'est cool, mais ce soir ton style c'est surtout distributeur de bières."
+        "La casquette à l'envers et le t-shirt De Strukt... on est en 2026 Clement, pas à Bercy 2005.",
+        "La barbe rousse de Viking sur un corps de stagiaire. Le Viking paye les hydromel, toi les bières.",
+        "Clement il met une casquette pour cacher quoi ? Le vide ? En tout cas ça cache pas la tournée.",
+        "Le style skateur à 30 ans passés. T'as raté le kickflip mais tu vas pas rater l'addition.",
+        "Avec ta barbe rousse tu ressembles à un personnage secondaire de Vikings qui meurt à l'épisode 2. Ce soir tu meurs au comptoir.",
+        "T-shirt De Strukt mais c'est ton compte en banque qui va être DESTRUKT.",
+        "Le mec a le style de Tony Hawk version Décathlon. Le seul trick ce soir c'est sortir la CB.",
+        "Casquette + barbe rousse = on dirait un livreur Deliveroo en pause. Livre-nous les bières, Clement.",
+        "Le regard perdu sous la casquette genre 'je comprends pas pourquoi c'est moi'. T'inquiète, la roue a parlé.",
+        "La barbe est rousse, le compte sera rouge. C'est ta tournée Clement."
     ],
     damien: [
-        "Ces yeux écarquillés c'est parce que tu viens de voir le prix de la tournée, Damien ?",
-        "Le regard de psychopathe dans le bus, ça fait peur à personne. Ce qui fait peur c'est l'addition.",
-        "Damien nous fait son plus beau sourire de requin. Parfait, les requins ça paie les tournées."
+        "DAMIEN TES YEUX SORTENT TELLEMENT DE TA TÊTE QU'ON DIRAIT QUE T'AS VU L'ADDITION AVANT TOUT LE MONDE.",
+        "Ce regard de serial killer du bus de nuit. Tu fais flipper personne mais ton banquier oui.",
+        "Le mec sourit comme le Joker version Flixbus. La blague c'est que tu payes.",
+        "Avec ces yeux écarquillés tu vois tout venir sauf la tournée apparemment.",
+        "Damien a la tête d'un mec recherché par Interpol. Recherché aussi par le barman : c'est ta tournée.",
+        "Ce sourire psychopathe... on sait pas si tu vas payer la tournée ou manger quelqu'un.",
+        "Les yeux de Damien sont tellement grands qu'il peut voir son avenir financier s'effondrer en temps réel.",
+        "Le mec a le regard d'un husky sous caféine. Calme-toi, respire, et sors la CB.",
+        "Damien sourit comme un mec qui vient de cacher un cadavre. Le cadavre c'est ton compte en banque.",
+        "Avec cette tête de fou furieux même la roue avait peur de te choisir. Mais elle l'a fait quand même."
     ],
     elwe: [
-        "La crinière de lion, le North Face, la baguette à la main... le Français ultime va payer comme un Français ultime.",
-        "Elwe avec ses cheveux dans le vent on dirait une pub L'Oréal. Mais ce soir c'est plutôt une pub Kronenbourg.",
-        "T'es adossé à la fenêtre comme un poète maudit, sauf que ce soir ta malédiction c'est la tournée."
+        "Elwe et sa crinière de cheval sauvage du Larzac. Même le cheval il payerait plus vite que toi.",
+        "Les cheveux jusqu'aux épaules, le North Face, et une BAGUETTE à la main. T'es une caricature de Français toi.",
+        "On dirait Aragorn après 3 ans de télétravail. Le Roi du Gondor paie sa tournée.",
+        "Cette tignasse c'est pas du style, c'est un cri à l'aide. L'aide c'est toi qui la donnes : en bières.",
+        "Elwe il agite sa baguette comme une baguette magique. Abracadabra : c'est ta tournée.",
+        "Le mec est affalé sur la fenêtre du train comme un chat errant. Un chat errant qui paye les coups.",
+        "Les cheveux de Elwe ont pas vu un peigne depuis 2019. Son portefeuille non plus d'ailleurs.",
+        "Mi-Jésus mi-clodo chic, Elwe est le genre de mec qui te dit 'j'ai pas ma CB' mais qui a une baguette tradition.",
+        "Le look 'j'ai dormi dans une haie et j'assume'. Assume aussi la tournée.",
+        "North Face sur le dos, baguette à la main, cheveux dans le vent... et la CB entre les dents s'il te plaît."
     ],
     florent: [
-        "Florent dans sa polaire tout doux, on dirait un ours en peluche. Un ours qui va sortir sa CB.",
-        "Le regard perdu dans le vide... tu cherches une excuse pour pas payer ? Y'en a pas.",
-        "Avec cette polaire tu ressembles à un randonneur perdu. Perdu oui, mais direction le bar pour payer."
+        "Florent dans sa polaire de berger des Pyrénées. Le troupeau c'est nous et le berger il paye la tournée.",
+        "Ce regard de cocker abandonné sur une aire d'autoroute. Nous on t'abandonne pas : on te laisse payer.",
+        "Le mec a la tête de quelqu'un qui se demande encore pourquoi il est là. T'es là pour payer Florent.",
+        "La polaire, le regard vide, la barbe de 5 jours... on dirait un naufragé. Naufragé financier après cette tournée.",
+        "Florent a l'air tellement perdu qu'on dirait que c'est son premier jour sur Terre. Premier jour, première tournée.",
+        "On dirait un personnage de fond dans un film, celui que tu remarques jamais. Sauf quand il paye.",
+        "Le mec ressemble à un mouton avec sa polaire de laine. Un mouton qu'on va tondre au comptoir.",
+        "Florent il a le charisme d'un figurant dans Plus Belle La Vie mais le budget d'une tournée de 15.",
+        "Le regard 'je suis en PLS' mais la CB est dans ta poche Florent, on le sait.",
+        "Tout doux tout mou dans sa petite polaire. Sors les griffes... et la CB."
     ],
     jo: [
-        "Jo et ses boucles grises, le George Clooney du groupe ! Clooney aurait payé sans râler, fais pareil.",
-        "Le sourire jusqu'aux oreilles dans ta veste de pluie... tu souriras moins quand tu verras l'addition.",
-        "Jo, le seul mec qui arrive en K-Way et qui repart sans un sou. C'est ta tournée !"
+        "Jo et ses boucles grises de vieux surfer californien échoué dans un Flixbus. La vague c'est l'addition.",
+        "Le sourire niais dans le K-Way... Jo, tu rigoleras moins quand tu verras que t'as 15 pintes à payer.",
+        "On dirait un animateur de centre aéré à la retraite. L'activité du jour : payer la tournée.",
+        "Ce K-Way a beau être imperméable, il protège pas ton portefeuille de la roue.",
+        "Jo sourit tellement qu'on dirait une pub pour un dentifrice de supermarché. Souris encore, tu payes.",
+        "Les boucles grises + le sourire béat = le tonton relou du barbecue qui raconte ses anecdotes. Et qui paye.",
+        "Jo il a la tête du mec qui dit 'allez c'est ma tournée' mais qui le fait jamais. Bah ce soir c'est la roue qui décide.",
+        "Le K-Way Explore... t'explores quoi Jo ? La limite de ta carte bleue ?",
+        "Avec ces cheveux gris bouclés tu ressembles à un caniche qui aurait pris un coup de vieux. Le caniche régale.",
+        "Jo, le seul mec qui porte un K-Way quand il fait beau. Et le seul qui paye quand c'est pas son tour. Ah bah si, c'est ton tour."
     ],
     jomain: [
-        "Le petit visage d'ange de Jomain va pas te sauver ce soir. Sors le portefeuille, bébé.",
-        "Pas de barbe, pas de ride, le Benjamin du groupe... mais assez grand pour payer la tournée.",
-        "Jomain fait sa tête de premier de la classe. Premier de la classe, premier à payer."
+        "Jomain a la tête d'un bébé de 28 ans. Même les bébés payent leur tournée ici.",
+        "Pas de barbe, pas un poil, la peau lisse comme un œuf. Un œuf qui va se faire casser au comptoir.",
+        "Jomain, le mec à qui on demande sa carte d'identité au bar. Montre plutôt ta CB.",
+        "Le babyface du groupe. Même la roue s'est dit 'allez on va bizuter le petit'.",
+        "Jomain il pourrait jouer un collégien dans une série TF1. Mais même les collégiens payent la cantine.",
+        "T'as la tête du mec qui se fait recaler en boîte alors qu'il a 30 ans. Tu te fais pas recaler par la roue par contre.",
+        "Le seul du groupe sans barbe. Ton menton est aussi nu que ton compte en banque va l'être.",
+        "Jomain ressemble à un stagiaire qu'on a emmené par pitié. Le stagiaire paye ce soir.",
+        "Visage de chérubin, portefeuille de martyr. C'est ta tournée gamin.",
+        "Le mec a la peau tellement lisse que la barbe a peur de pousser. Ta CB aussi a peur de sortir, mais elle va le faire."
     ],
     julien: [
-        "Le bonnet, la doudoune mouton, le regard de tueur... Julien est prêt pour tout sauf payer. Dommage.",
-        "On dirait un rappeur en tournée. Bah justement, c'est TA tournée Julien.",
-        "Le style aviateur c'est beau, mais ce soir ton plan de vol c'est direct au comptoir."
+        "Le bonnet en intérieur Julien ? Tu caches quoi là-dessous ? Un portefeuille j'espère.",
+        "La doudoune doublée mouton, le bonnet, le regard de tueur... t'es sapé comme un braqueur mais c'est toi qui se fait braquer.",
+        "On dirait un rappeur du 9-3 qui prend le TER pour la première fois. Premier arrêt : la tournée.",
+        "Le style aviateur Top Gun mais t'es dans un bus Macron. Maverick il payait ses tournées.",
+        "Le bonnet + la doudoune mouton en plein mois de mars. T'as froid Julien ? Ton portefeuille aussi va avoir froid.",
+        "Julien a le look d'un dealer de Netflix. Sauf que la seule came qu'il deal ce soir c'est des pintes.",
+        "Le regard sombre sous le bonnet... tu prépares un plan pour esquiver ? Y'a pas de plan B, que du plan Bière.",
+        "Avec cette doudoune t'as l'air d'un ours qui hiberne. Réveille-toi, c'est ta tournée.",
+        "Julien, le mec le plus mystérieux du groupe. Le seul mystère c'est pourquoi t'as pas encore sorti ta CB.",
+        "Le bonnet t'isole du froid mais pas de la roue. Paye et retourne hiberner."
     ],
     laot: [
-        "Laot et ses cheveux gris de renard argenté. Le renard il est malin, mais la roue est plus maligne.",
-        "Le regard sérieux, le t-shirt noir, le style sobre... sobre sauf ce soir, parce que tu régales.",
-        "Laot fait sa tête de mec trop cool pour sourire. Tu souris pas mais tu paies quand même."
+        "Laot a la tête d'un tueur à gages qui a jamais souri de sa vie. Ce soir il sourit pas mais il paye.",
+        "Le mec fait la gueule sur TOUTES les photos. T'inquiète Laot, une tournée ça va te décoincer.",
+        "Ce regard de prof de maths qui t'a mis 2/20 au contrôle. Le 2/20 c'est la note de ton portefeuille après ce soir.",
+        "Le t-shirt noir, la mâchoire serrée, les cheveux gris... on dirait un agent du FBI en civil. Agent spécial : payeur de tournées.",
+        "Laot sourit jamais. Normal, sourire c'est gratuit et lui il aime pas les trucs gratuits. Ce soir rien n'est gratuit.",
+        "Le look 'je suis venu, j'ai vu, j'ai fait la gueule'. Ce soir tu rajoutes 'j'ai payé'.",
+        "Avec cette tête de six pieds de long, Laot fait peur à la roue. Mais la roue s'en fout.",
+        "Le seul mec qui arrive à avoir l'air en colère assis dans un bus. Attends de voir l'addition.",
+        "Laot, le Chuck Norris du groupe. Sauf que Chuck Norris il paye ses bières d'un regard. Toi c'est par CB.",
+        "Ce visage sculpté dans la pierre ne montre aucune émotion. Même quand la roue le désigne. Mais il paye quand même."
     ],
     n2b: [
-        "N2b dans sa doudoune noire, discret comme d'habitude. Discret mais pas invisible pour la roue !",
-        "Le petit sourire en coin genre 'ça tombera pas sur moi'... SURPRISE !",
-        "N2b, le mec toujours bien emmitouflé. Ce soir c'est ton portefeuille qui va avoir froid."
+        "N2b planqué dans sa doudoune comme un ninja. Le ninja est démasqué : c'est ta tournée.",
+        "Le sourire en coin genre 'moi ? jamais !' BIEN JOUÉ C'EST TOI.",
+        "N2b le plus discret du groupe. Tellement discret que même son portefeuille veut se cacher.",
+        "La doudoune noire, les mains dans les poches, le profil bas... le profil bas ça marche pas avec la roue.",
+        "On dirait un agent secret en mission infiltration. Mission du jour : payer 15 coups.",
+        "N2b essaie de se fondre dans le décor mais le décor le recrache au comptoir.",
+        "Le mec a la doudoune mais pas l'armure. La roue traverse la doudoune.",
+        "N2b, le genre de mec qui va aux toilettes pile au moment de l'addition. PAS CETTE FOIS.",
+        "Tellement emmitouflé dans sa doudoune qu'il pensait être invisible. La roue voit tout.",
+        "Le petit sourire discret... c'est le sourire de quelqu'un qui va se faire démonter le compte en banque."
     ],
     quentin: [
-        "Les lunettes, le double pouce levé, la veste Explore... t'explores surtout ta carte bleue ce soir !",
-        "Quentin tout sourire comme un moniteur de colo. Bah le moniteur il paie le goûter : c'est ta tournée.",
-        "Le seul mec avec des lunettes du groupe et il a pas vu venir la tournée. Fallait mettre des verres plus épais."
+        "LES LUNETTES ET LE DOUBLE POUCE LEVÉ. On dirait un touriste allemand en colo. Ja, c'est ta tournée !",
+        "Quentin a l'air tellement content d'être là qu'il va être content de payer aussi.",
+        "Le mec fait le pouce comme si on le prenait en stop. Le stop c'est au comptoir, Quentin.",
+        "Avec ces lunettes il a pas vu venir la tournée. Faut aller chez l'ophtalmo Quentin.",
+        "On dirait le prof d'informatique qui essaie d'être cool avec les élèves. T'es pas cool Quentin, t'es le payeur.",
+        "Le pouce levé c'est le signe international de 'je suis d'accord pour payer la tournée'. Merci Quentin.",
+        "La veste Explore, les lunettes, le sourire de nerd enthousiaste... on dirait Bill Gates en week-end. Bill paye, toi aussi.",
+        "Quentin, le seul mec qui met des lunettes et qui voit RIEN venir. Surprise : c'est ta tournée.",
+        "Le double pouce c'est bien, le double paiement par CB c'est mieux. Allez au comptoir.",
+        "On dirait la photo LinkedIn d'un mec en reconversion. Reconversion payeur de bières."
     ],
     rouv: [
-        "Le crâne rasé, la barbe pleine, les pouces en l'air : Rouv est prêt ! Prêt à payer surtout.",
-        "On dirait un videur de boîte de nuit. Bah ce soir tu videurs... ton portefeuille.",
-        "Rouv avec son sourire de pub Colgate et ses pouces en l'air. Pouce en l'air, CB en main !"
+        "LE CRÂNE LE PLUS LISSE DU BUS VA ENFIN SERVIR À QUELQUE CHOSE : REFLÉTER LA LUMIÈRE DU BAR EN PAYANT.",
+        "Rouv prend la place de 2 personnes sur le siège et il va payer pour 15. L'équilibre de l'univers.",
+        "Le crane rasé, la barbe pleine, les 2 pouces levés, le sourire XXL : on dirait Mr. Propre en week-end. Mr. Propre nettoie ton compte.",
+        "Rouv il a la tête d'un videur de boîte qui laisse rentrer personne sauf l'addition.",
+        "T'es assis dans le bus comme un roi sur son trône. Le roi paye les impôts et les tournées.",
+        "Avec ce crâne on pourrait y atterrir un hélicoptère. Atterris plutôt au comptoir.",
+        "Les deux pouces en l'air comme un empereur romain. Pouce en haut = il paye. C'est la règle.",
+        "Rouv a le sourire d'un mec qui vient de manger le dernier sandwich. Tu vas manger l'addition aussi.",
+        "Le bomber bleu taille XXL, le sourire qui prend toute la photo... et l'addition qui va prendre tout ton salaire.",
+        "On dirait un bouddha chauve qui a atteint l'illumination. L'illumination c'est de comprendre que C'EST TA TOURNÉE."
     ]
 };
 
