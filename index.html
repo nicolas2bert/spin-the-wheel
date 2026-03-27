@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin The Wheel — Who's Buying?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Spin The Wheel</h1>
+        <p class="subtitle">Who's buying the next round?</p>
+    </header>
+
+    <main>
+        <section class="wheel-section">
+            <div class="round-counter" id="round-counter">Round 1 of 15</div>
+            <div class="wheel-container">
+                <div class="pointer"></div>
+                <canvas id="wheel-canvas" width="600" height="600"></canvas>
+            </div>
+            <div class="controls">
+                <button id="spin-btn" class="spin-btn">SPIN!</button>
+                <div class="secondary-controls">
+                    <button id="mute-btn" class="icon-btn" aria-label="Toggle sound" title="Toggle sound">
+                        <svg class="icon-muted" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <line x1="23" y1="9" x2="17" y2="15"></line>
+                            <line x1="17" y1="9" x2="23" y2="15"></line>
+                        </svg>
+                        <svg class="icon-unmuted" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                        </svg>
+                    </button>
+                    <button id="reset-btn" class="secondary-btn">Reset Game</button>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <section class="history-section">
+                <h2>History</h2>
+                <div class="history-log" id="history-log">
+                    <p class="empty-state">No rounds played yet</p>
+                </div>
+            </section>
+
+            <section class="roster-section">
+                <h2>Players</h2>
+                <div class="roster-grid" id="roster-grid"></div>
+            </section>
+        </aside>
+    </main>
+
+    <div class="overlay" id="winner-overlay">
+        <canvas id="confetti-canvas"></canvas>
+        <div class="winner-card">
+            <div class="winner-avatar-wrapper">
+                <img id="winner-avatar" class="winner-avatar" src="" alt="">
+            </div>
+            <h2 class="winner-name" id="winner-name"></h2>
+            <p class="winner-message" id="winner-message"></p>
+            <p class="dismiss-hint">Click anywhere or press any key to continue</p>
+        </div>
+    </div>
+</body>
+</html>
