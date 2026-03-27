@@ -322,7 +322,7 @@ function loadPlayers() {
         return {
             id: name,
             name: capitalize(name),
-            imgSrc: 'players/' + name + '.png',
+            imgSrc: 'players/faces/' + name + '.png',
             fallbackColor: FALLBACK_COLORS[index % FALLBACK_COLORS.length],
             imgLoaded: false,
             imgElement: null,
