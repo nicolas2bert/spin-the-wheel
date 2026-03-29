@@ -1,7 +1,7 @@
 const PLAYER_NAMES = [
     'antoine', 'arnaud', 'bauj', 'bec', 'clement',
     'damien', 'elwe', 'florent', 'jo', 'jomain',
-    'julien', 'laot', 'n2b', 'quentin', 'rouv'
+    'jr', 'julien', 'laot', 'morel', 'n2b', 'quentin', 'rouv'
 ];
 
 const SEGMENT_COLORS = ['#ff2d75', '#00e5ff', '#ffcc00', '#1a1a3e', '#ff6b9d', '#00b8d4'];
@@ -17,7 +17,9 @@ const PLAYER_MESSAGES = {
         "Le mec met un hoodie blanc pour aller en week-end. T'es pas à Milan, t'es dans un car, et tu payes.",
         "Avec cette mâchoire carrée tu pourrais faire des pubs pour After Shave, mais là tu fais la pub pour la générosité.",
         "Antoine, le seul mec du groupe qui met 20 minutes à se coiffer pour aller dans un bus. La CB aussi faut la sortir.",
-        "Ce regard de lover dans le train... c'est les bières que tu dragues ou les filles ?"
+        "Ce regard de lover dans le train... c'est les bières que tu dragues ou les filles ?",
+        "Sale cave Antoine, avec la tête que t'as tu devrais payer double rien que pour le préjudice visuel.",
+        "Meskine Antoine, c'est ta vie ça ? Poser dans les transports et payer les tournées ?"
     ],
     arnaud: [
         "Arnaud avec ses bouclettes de caniche royal. C'est pas un toilettage qu'il te faut, c'est une tournée à payer.",
@@ -29,7 +31,9 @@ const PLAYER_MESSAGES = {
         "Le mec tient son téléphone comme si sa vie en dépendait. Lâche le phone, attrape la CB.",
         "Avec cette tignasse tu dois mettre 3 litres de shampoing par semaine. T'as le budget shampoing, t'as le budget tournée.",
         "Arnaud en mode Jean-Jacques Goldman jeune. Sauf que Goldman il chantait 'Je te donne'. Toi aussi : tu donnes ta tournée.",
-        "La barbe mal taillée + les boucles en mode 'je me suis réveillé comme ça'. Bah réveille aussi ton portefeuille."
+        "La barbe mal taillée + les boucles en mode 'je me suis réveillé comme ça'. Bah réveille aussi ton portefeuille.",
+        "Sale cave Arnaud, avec la tête que t'as même tes boucles veulent se barrer. Meskine.",
+        "C'est ta vie ça Arnaud ? Te prendre pour un chanteur folk alors que t'es juste un payeur de tournées ?"
     ],
     bauj: [
         "Le finger gun c'est fini Bauj, la seule chose que tu dégaines ce soir c'est ta Visa.",
@@ -37,11 +41,13 @@ const PLAYER_MESSAGES = {
         "T'as une alliance au doigt mais ce soir c'est avec le comptoir que tu te maries.",
         "Bauj fait le beau avec ses cheveux gris de George Clooney à Wish.",
         "Le doigt qui pointe les autres mais c'est toi que la roue a pointé. Arroseur arrosé.",
-        "Ce sourire de commercial en séminaire... tu vas closer un deal : 15 bières, ta CB.",
+        "Ce sourire de commercial en séminaire... tu vas closer un deal : 17 bières, ta CB.",
         "Les cheveux gris ça fait 'homme mûr'. Un homme mûr ça paye ses tournées sans pleurer.",
         "Tu fais le mec cool avec ton hoodie marron mais t'as la tête d'un père de famille qui va se faire dépouiller.",
         "La bague au doigt, le finger gun, le sourire en coin... t'as le starter pack du mec qui va quand même payer.",
-        "Bauj il pointe du doigt comme s'il choisissait qui paye. Plot twist : c'est LUI."
+        "Bauj il pointe du doigt comme s'il choisissait qui paye. Plot twist : c'est LUI.",
+        "Meskine Bauj, avec la tête que t'as le finger gun c'est la seule arme qu'on te confierait. Sale cave.",
+        "C'est ta vie ça Bauj ? Pointer les autres du doigt et se faire pointer par la roue ?"
     ],
     bec: [
         "BEC FERME LA BOUCHE ON VOIT TES AMYGDALES DEPUIS LE FOND DU BUS.",
@@ -51,9 +57,11 @@ const PLAYER_MESSAGES = {
         "Bec ouvre la bouche comme s'il allait avaler le bus entier. Avale plutôt l'addition.",
         "On dirait une photo de réaction meme. Le meme c'est toi qui payes la tournée.",
         "Le mec a la mâchoire tellement décrochée qu'on dirait un distributeur de PEZ géant. Distribue plutôt des bières.",
-        "Cette tête c'est exactement la tête que tu vas faire quand tu vas voir le prix de 15 pintes.",
+        "Cette tête c'est exactement la tête que tu vas faire quand tu vas voir le prix de 17 pintes.",
         "Bec rigole comme un phoque sous ecstasy. Le phoque il paye sa tournée au moins ?",
-        "T'as la bouche plus grande que ton portefeuille mais ce soir c'est le portefeuille qui s'ouvre."
+        "T'as la bouche plus grande que ton portefeuille mais ce soir c'est le portefeuille qui s'ouvre.",
+        "MESKINE BEC, FERME LA BOUCHE SALE CAVE, avec la tête que t'as on dirait un poisson hors de l'eau.",
+        "C'est ta vie ça Bec ? Ouvrir la gueule et ouvrir le portefeuille ? Sale cave va."
     ],
     clement: [
         "La casquette à l'envers et le t-shirt De Strukt... on est en 2026 Clement, pas à Bercy 2005.",
@@ -65,7 +73,9 @@ const PLAYER_MESSAGES = {
         "Le mec a le style de Tony Hawk version Décathlon. Le seul trick ce soir c'est sortir la CB.",
         "Casquette + barbe rousse = on dirait un livreur Deliveroo en pause. Livre-nous les bières, Clement.",
         "Le regard perdu sous la casquette genre 'je comprends pas pourquoi c'est moi'. T'inquiète, la roue a parlé.",
-        "La barbe est rousse, le compte sera rouge. C'est ta tournée Clement."
+        "La barbe est rousse, le compte sera rouge. C'est ta tournée Clement.",
+        "Sale cave Clement, avec la tête que t'as sous ta casquette c'est mieux de la garder. Meskine.",
+        "C'est ta vie ça Clement ? La casquette à l'envers et le compte en banque à l'envers ?"
     ],
     damien: [
         "DAMIEN TES YEUX SORTENT TELLEMENT DE TA TÊTE QU'ON DIRAIT QUE T'AS VU L'ADDITION AVANT TOUT LE MONDE.",
@@ -77,7 +87,9 @@ const PLAYER_MESSAGES = {
         "Les yeux de Damien sont tellement grands qu'il peut voir son avenir financier s'effondrer en temps réel.",
         "Le mec a le regard d'un husky sous caféine. Calme-toi, respire, et sors la CB.",
         "Damien sourit comme un mec qui vient de cacher un cadavre. Le cadavre c'est ton compte en banque.",
-        "Avec cette tête de fou furieux même la roue avait peur de te choisir. Mais elle l'a fait quand même."
+        "Avec cette tête de fou furieux même la roue avait peur de te choisir. Mais elle l'a fait quand même.",
+        "MESKINE DAMIEN, avec la tête que t'as on dirait que t'as vu le prix des bières avant tout le monde. Sale cave.",
+        "C'est ta vie ça Damien ? Faire flipper tout le monde et se faire flipper par l'addition ?"
     ],
     elwe: [
         "Elwe et sa crinière de cheval sauvage du Larzac. Même le cheval il payerait plus vite que toi.",
@@ -89,7 +101,9 @@ const PLAYER_MESSAGES = {
         "Les cheveux de Elwe ont pas vu un peigne depuis 2019. Son portefeuille non plus d'ailleurs.",
         "Mi-Jésus mi-clodo chic, Elwe est le genre de mec qui te dit 'j'ai pas ma CB' mais qui a une baguette tradition.",
         "Le look 'j'ai dormi dans une haie et j'assume'. Assume aussi la tournée.",
-        "North Face sur le dos, baguette à la main, cheveux dans le vent... et la CB entre les dents s'il te plaît."
+        "North Face sur le dos, baguette à la main, cheveux dans le vent... et la CB entre les dents s'il te plaît.",
+        "Meskine Elwe, avec la tête que t'as et ta baguette tu ressembles à un SDF chic. Sale cave, paye.",
+        "C'est ta vie ça Elwe ? Te balader avec une baguette pendant que la roue te baguette au comptoir ?"
     ],
     florent: [
         "Florent dans sa polaire de berger des Pyrénées. Le troupeau c'est nous et le berger il paye la tournée.",
@@ -99,13 +113,15 @@ const PLAYER_MESSAGES = {
         "Florent a l'air tellement perdu qu'on dirait que c'est son premier jour sur Terre. Premier jour, première tournée.",
         "On dirait un personnage de fond dans un film, celui que tu remarques jamais. Sauf quand il paye.",
         "Le mec ressemble à un mouton avec sa polaire de laine. Un mouton qu'on va tondre au comptoir.",
-        "Florent il a le charisme d'un figurant dans Plus Belle La Vie mais le budget d'une tournée de 15.",
+        "Florent il a le charisme d'un figurant dans Plus Belle La Vie mais le budget d'une tournée de 17.",
         "Le regard 'je suis en PLS' mais la CB est dans ta poche Florent, on le sait.",
-        "Tout doux tout mou dans sa petite polaire. Sors les griffes... et la CB."
+        "Tout doux tout mou dans sa petite polaire. Sors les griffes... et la CB.",
+        "Sale cave Florent, avec la tête que t'as même ta polaire a honte de te couvrir. Meskine.",
+        "C'est ta vie ça Florent ? Regarder dans le vide et payer dans le plein ?"
     ],
     jo: [
         "Jo et ses boucles grises de vieux surfer californien échoué dans un Flixbus. La vague c'est l'addition.",
-        "Le sourire niais dans le K-Way... Jo, tu rigoleras moins quand tu verras que t'as 15 pintes à payer.",
+        "Le sourire niais dans le K-Way... Jo, tu rigoleras moins quand tu verras que t'as 17 pintes à payer.",
         "On dirait un animateur de centre aéré à la retraite. L'activité du jour : payer la tournée.",
         "Ce K-Way a beau être imperméable, il protège pas ton portefeuille de la roue.",
         "Jo sourit tellement qu'on dirait une pub pour un dentifrice de supermarché. Souris encore, tu payes.",
@@ -113,7 +129,9 @@ const PLAYER_MESSAGES = {
         "Jo il a la tête du mec qui dit 'allez c'est ma tournée' mais qui le fait jamais. Bah ce soir c'est la roue qui décide.",
         "Le K-Way Explore... t'explores quoi Jo ? La limite de ta carte bleue ?",
         "Avec ces cheveux gris bouclés tu ressembles à un caniche qui aurait pris un coup de vieux. Le caniche régale.",
-        "Jo, le seul mec qui porte un K-Way quand il fait beau. Et le seul qui paye quand c'est pas son tour. Ah bah si, c'est ton tour."
+        "Jo, le seul mec qui porte un K-Way quand il fait beau. Et le seul qui paye quand c'est pas son tour. Ah bah si, c'est ton tour.",
+        "Meskine Jo, sale cave, avec la tête que t'as on dirait un caniche qui a gagné au loto. Sauf que toi tu perds.",
+        "C'est ta vie ça Jo ? Sourire bêtement dans un K-Way et payer intégralement ?"
     ],
     jomain: [
         "Jomain a la tête d'un bébé de 28 ans. Même les bébés payent leur tournée ici.",
@@ -125,7 +143,9 @@ const PLAYER_MESSAGES = {
         "Le seul du groupe sans barbe. Ton menton est aussi nu que ton compte en banque va l'être.",
         "Jomain ressemble à un stagiaire qu'on a emmené par pitié. Le stagiaire paye ce soir.",
         "Visage de chérubin, portefeuille de martyr. C'est ta tournée gamin.",
-        "Le mec a la peau tellement lisse que la barbe a peur de pousser. Ta CB aussi a peur de sortir, mais elle va le faire."
+        "Le mec a la peau tellement lisse que la barbe a peur de pousser. Ta CB aussi a peur de sortir, mais elle va le faire.",
+        "Sale cave Jomain, avec la tête que t'as on te demanderait ta carte d'identité pour acheter des Pépitos. Meskine.",
+        "C'est ta vie ça Jomain ? Avoir une tête de bébé et des factures de grand ?"
     ],
     julien: [
         "Le bonnet en intérieur Julien ? Tu caches quoi là-dessous ? Un portefeuille j'espère.",
@@ -137,7 +157,9 @@ const PLAYER_MESSAGES = {
         "Le regard sombre sous le bonnet... tu prépares un plan pour esquiver ? Y'a pas de plan B, que du plan Bière.",
         "Avec cette doudoune t'as l'air d'un ours qui hiberne. Réveille-toi, c'est ta tournée.",
         "Julien, le mec le plus mystérieux du groupe. Le seul mystère c'est pourquoi t'as pas encore sorti ta CB.",
-        "Le bonnet t'isole du froid mais pas de la roue. Paye et retourne hiberner."
+        "Le bonnet t'isole du froid mais pas de la roue. Paye et retourne hiberner.",
+        "Sale cave Julien, avec la tête que t'as sous ce bonnet on dirait un braqueur en RTT. Meskine.",
+        "C'est ta vie ça Julien ? Te planquer sous une doudoune et quand même se faire choper par la roue ?"
     ],
     laot: [
         "Laot a la tête d'un tueur à gages qui a jamais souri de sa vie. Ce soir il sourit pas mais il paye.",
@@ -149,19 +171,23 @@ const PLAYER_MESSAGES = {
         "Avec cette tête de six pieds de long, Laot fait peur à la roue. Mais la roue s'en fout.",
         "Le seul mec qui arrive à avoir l'air en colère assis dans un bus. Attends de voir l'addition.",
         "Laot, le Chuck Norris du groupe. Sauf que Chuck Norris il paye ses bières d'un regard. Toi c'est par CB.",
-        "Ce visage sculpté dans la pierre ne montre aucune émotion. Même quand la roue le désigne. Mais il paye quand même."
+        "Ce visage sculpté dans la pierre ne montre aucune émotion. Même quand la roue le désigne. Mais il paye quand même.",
+        "Meskine Laot, sale cave, avec la tête que t'as tu fais peur aux enfants ET à ton banquier.",
+        "C'est ta vie ça Laot ? Faire la gueule H24 et payer les tournées ? Meskine."
     ],
     n2b: [
         "N2b planqué dans sa doudoune comme un ninja. Le ninja est démasqué : c'est ta tournée.",
         "Le sourire en coin genre 'moi ? jamais !' BIEN JOUÉ C'EST TOI.",
         "N2b le plus discret du groupe. Tellement discret que même son portefeuille veut se cacher.",
         "La doudoune noire, les mains dans les poches, le profil bas... le profil bas ça marche pas avec la roue.",
-        "On dirait un agent secret en mission infiltration. Mission du jour : payer 15 coups.",
+        "On dirait un agent secret en mission infiltration. Mission du jour : payer 17 coups.",
         "N2b essaie de se fondre dans le décor mais le décor le recrache au comptoir.",
         "Le mec a la doudoune mais pas l'armure. La roue traverse la doudoune.",
         "N2b, le genre de mec qui va aux toilettes pile au moment de l'addition. PAS CETTE FOIS.",
         "Tellement emmitouflé dans sa doudoune qu'il pensait être invisible. La roue voit tout.",
-        "Le petit sourire discret... c'est le sourire de quelqu'un qui va se faire démonter le compte en banque."
+        "Le petit sourire discret... c'est le sourire de quelqu'un qui va se faire démonter le compte en banque.",
+        "Sale cave N2b, avec la tête que t'as dans ta doudoune on dirait un saucisson sous vide. Meskine.",
+        "C'est ta vie ça N2b ? Te planquer et quand même se faire cramer par la roue ? Sale cave."
     ],
     quentin: [
         "LES LUNETTES ET LE DOUBLE POUCE LEVÉ. On dirait un touriste allemand en colo. Ja, c'est ta tournée !",
@@ -173,11 +199,13 @@ const PLAYER_MESSAGES = {
         "La veste Explore, les lunettes, le sourire de nerd enthousiaste... on dirait Bill Gates en week-end. Bill paye, toi aussi.",
         "Quentin, le seul mec qui met des lunettes et qui voit RIEN venir. Surprise : c'est ta tournée.",
         "Le double pouce c'est bien, le double paiement par CB c'est mieux. Allez au comptoir.",
-        "On dirait la photo LinkedIn d'un mec en reconversion. Reconversion payeur de bières."
+        "On dirait la photo LinkedIn d'un mec en reconversion. Reconversion payeur de bières.",
+        "Meskine Quentin, sale cave, avec la tête que t'as et tes pouces en l'air on dirait un moniteur d'auto-école enthousiaste.",
+        "C'est ta vie ça Quentin ? Faire le pouce comme si tout allait bien alors que tu vas te faire démonter ?"
     ],
     rouv: [
         "LE CRÂNE LE PLUS LISSE DU BUS VA ENFIN SERVIR À QUELQUE CHOSE : REFLÉTER LA LUMIÈRE DU BAR EN PAYANT.",
-        "Rouv prend la place de 2 personnes sur le siège et il va payer pour 15. L'équilibre de l'univers.",
+        "Rouv prend la place de 2 personnes sur le siège et il va payer pour 17. L'équilibre de l'univers.",
         "Le crane rasé, la barbe pleine, les 2 pouces levés, le sourire XXL : on dirait Mr. Propre en week-end. Mr. Propre nettoie ton compte.",
         "Rouv il a la tête d'un videur de boîte qui laisse rentrer personne sauf l'addition.",
         "T'es assis dans le bus comme un roi sur son trône. Le roi paye les impôts et les tournées.",
@@ -185,7 +213,33 @@ const PLAYER_MESSAGES = {
         "Les deux pouces en l'air comme un empereur romain. Pouce en haut = il paye. C'est la règle.",
         "Rouv a le sourire d'un mec qui vient de manger le dernier sandwich. Tu vas manger l'addition aussi.",
         "Le bomber bleu taille XXL, le sourire qui prend toute la photo... et l'addition qui va prendre tout ton salaire.",
-        "On dirait un bouddha chauve qui a atteint l'illumination. L'illumination c'est de comprendre que C'EST TA TOURNÉE."
+        "On dirait un bouddha chauve qui a atteint l'illumination. L'illumination c'est de comprendre que C'EST TA TOURNÉE.",
+        "SALE CAVE ROUV, avec la tête que t'as et ce crâne lisse on pourrait y projeter un film. Le film c'est toi qui payes.",
+        "Meskine Rouv, c'est ta vie ça ? Prendre toute la place dans le bus et toute l'addition au bar ?"
+    ],
+    jr: [
+        "JR, le mec qui se fait appeler par ses initiales comme s'il était dans Dallas. Le pétrole c'est ta CB ce soir.",
+        "Meskine JR, même tes initiales sont trop courtes pour esquiver la roue. Paye sale cave.",
+        "JR, avec la tête que t'as tu devrais porter des lunettes de soleil H24. Et un portefeuille ouvert.",
+        "C'est ta vie ça JR ? Deux lettres pour un prénom et zéro chance d'échapper à la tournée ?",
+        "Sale cave JR ! T'as cru que deux lettres ça suffisait pour passer inaperçu ? Meskine.",
+        "JR, le seul mec dont le prénom tient sur une plaque d'immatriculation. Le seul truc long c'est l'addition.",
+        "On sait même pas ce que JR veut dire mais on sait ce que la roue veut dire : c'est TA tournée.",
+        "JR comme Junior ? T'es peut-être junior mais tu payes comme un senior ce soir. Sale cave.",
+        "JR, deux lettres, zéro excuse. La roue a parlé, le portefeuille s'ouvre. Meskine.",
+        "Avec la tête que t'as JR, même un QR code a plus de personnalité. C'est ta vie ça ? Allez, paye."
+    ],
+    morel: [
+        "Morel, le mec avec un nom de champignon et le budget d'un cèpe séché. Allez, c'est ta tournée sale cave !",
+        "Meskine Morel, la roue te déteste autant que ton coiffeur. Paye et va pleurer.",
+        "Morel, avec la tête que t'as on pensait que personne te choisirait. La roue s'en fout de ta gueule.",
+        "C'est ta vie ça Morel ? Te faire défoncer par une roue devant tout le monde ? Allez, CB.",
+        "Morel, même un champignon vénéneux a plus de chance que toi. Sale cave, c'est ta tournée.",
+        "Le mec s'appelle Morel et il pousse dans l'ombre comme un champignon. Sors de l'ombre et sors ta CB.",
+        "Morel, t'as la tête d'un mec qui commande de l'eau plate au bar. Ce soir tu commandes pour 17. Meskine.",
+        "Sale cave Morel ! T'as cru que tu pouvais passer entre les mailles de la roue ?",
+        "Meskine Morel, avec la tête que t'as tu devrais au moins compenser en payant des coups. C'est le moment.",
+        "C'est ta vie ça Morel ? Un nom de champignon et une tournée à payer ? Sale cave va."
     ]
 };
 
@@ -194,7 +248,8 @@ const FINAL_MESSAGE = "Le dernier survivant... au fond, on savait tous que c'ét
 const FALLBACK_COLORS = [
     '#ff2d75', '#00e5ff', '#ffcc00', '#e040fb', '#00e676',
     '#ff6e40', '#448aff', '#ff4081', '#69f0ae', '#ffd740',
-    '#8c9eff', '#ea80fc', '#84ffff', '#b2ff59', '#ff8a80'
+    '#8c9eff', '#ea80fc', '#84ffff', '#b2ff59', '#ff8a80',
+    '#ff9100', '#7c4dff'
 ];
 
 const STORAGE_KEY = 'spin-the-wheel-state';
